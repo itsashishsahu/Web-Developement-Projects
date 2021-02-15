@@ -1,0 +1,195 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(90deg, orange, yellow );
+        
+    }
+    @media (max-width: 550px) {
+        body {
+        background-image: linear-gradient(90deg, rgb(255, 0, 179), rgb(30, 255, 0) );
+        
+    }
+        }
+    
+    #header {
+        position: fixed;
+        border-radius: 25px;
+        background-image: linear-gradient(45deg, red,skyblue, rgb(204, 204, 255));
+    }
+    #header-div{
+        display: flex;
+        
+    }
+    
+    #header-img {
+        height: 10vh;
+        width: 5vw;
+        border-radius: 50px;
+        display: inline;
+    }
+    
+    #nav-bar {
+      margin-left: 29vw;  
+    }
+    
+    #nav-link-ul {
+        float: right;
+        padding-right: 15vw;
+        display: flex;
+        list-style: none;
+    }
+    
+    .nav-link {
+        font-size: large;
+        font-weight: bold;
+        padding: 0vh 5vw;
+        
+    }
+    .nav-link-anchor{
+        text-decoration: none;
+    }
+    main{
+    display: block;
+    margin-left: 30vw;    
+
+    }
+    .main-section{
+        
+    }
+    .contact-us-introduction{
+        margin-left: 6vw;
+    }
+    .contact-us-introduction-class{
+        margin-left: 8vw;
+    }
+    #form{
+        
+    }
+    #email-input{
+        height: 25px;
+        width: 250px;
+        border-radius: 25px;
+        border: none;
+    }
+    #introduction{
+        font-weight: bold;
+    }
+    .itsashishsahucom{
+        text-decoration: none;
+        font-weight: bold;
+    }
+    .submit-email{
+        border: none;
+        border-radius: 25px;
+        background-image: linear-gradient(25deg, pink, red, silver) ;
+    }
+    #about-us{
+
+    }
+    #video{
+        position: absolute;
+    }
+</style>
+
+<body>
+    <header id="header">
+        <div id="header-div">
+        <img id="header-img" 
+            src="F:\Developement\itsashishsahu.com\Landing_Page\Logo.JPG"
+            alt="itsashishsahu.com Logo"
+        >
+        <nav id="nav-bar">
+            <ul id="nav-link-ul">
+                <li class="nav-link"><a  class="nav-link-anchor" href="#introduction" >Introduction</a></li>
+                <li class="nav-link"><a class="nav-link-anchor" href="#contact-us" >Contact Us</a></li>
+                <li class="nav-link"><a  class="nav-link-anchor" href="#about-us" >About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <main>
+        <section id="introduction" class="main-section contact-us-introduction">
+            <h3 class="contact-us-introduction-class">Introduction</h3>
+            <p><a class="itsashishsahucom" href="https://itsashishsahu.wordpress.com/" target="_blank">itsashishsahu.com</a> offers a unique platform through which one can offer its customer<br> 
+               all the services under one roof thereby it can generate unlimited income<br> 
+               opportunities. One can choose any of the below, join <a class="itsashishsahucom" href="https://itsashishsahu.wordpress.com/" target="_blank">itsashishsahu.com</a> and start your<br> 
+               own Business!!!
+            </p>
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="contact-us" class="main-section contact-us-introduction">
+            <h3 class="contact-us-introduction-class">Get Your Subscrition</h3>
+            <div>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                   <label title="E-mail" >Subscribe To Our Newsletter: 
+                       <input
+                        id="email-input" 
+                        type="email" 
+                        placeholder="Enter Your E-mail" 
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                   </label>
+                  <input id="submit" type="submit" class="submit-email">
+                </form>
+            </div>   
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section id="about-us" class="main-section">
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Wcfkau_a3jU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <footer>
+        <section>
+            <p>copyright under rules of 2020</p>
+        </section>
+    </footer>
+</body>
+
+</html>
