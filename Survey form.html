@@ -1,0 +1,304 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<!--CSS Start-->
+<style>
+    body{
+        background-color: rgba(27, 226, 70, 0.753);
+    }
+    #h-1{
+        font-size: 5vh;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 25px;
+    }
+    #s-1{
+        font-size: 3vh;
+        width: 50%;
+        margin-left: 25%;
+        border-radius: 25px;  
+    }
+    .title-1{
+        display: flex;
+        justify-content: center;
+    }
+    #description{
+        position: relative;
+    }
+    section{
+        background-color: rgba(27, 226, 70, 0.753);
+    }
+    #note{
+        display: flex;
+        justify-content: center;
+
+    }
+    .label-input{
+        border: none;
+        padding-left: 5vw;
+        border-radius: 10vh;
+        font-size: 4vh;
+        width: 25vw;
+        background-color: rgba(0, 255, 242, 0.753);
+    }
+    .content{
+        color: cornsilk;
+        font-weight: bold;
+        font-size: 4vh;
+        display: flex;
+        justify-content: center;
+    }
+    #what-is-your-qualificarion{
+        display: block;
+    }
+    #select-your-goal{
+        display: block;
+        padding-left: 15vw;
+    }
+    #select-your-goal-p{
+        height: 10px;
+    }
+    .form-group{
+        font-size: 4vh;
+        display: block;
+        padding-left: 15vw;
+    }
+    
+    input.radio-button{
+        height: 4vh;
+        width: 4vw;
+    }
+    input.input-checkbox{
+        height: 4vh;
+        width: 4vw;
+    }
+    textarea{
+        padding-left: 5vw;
+        padding-right: 5vw;
+        border-radius: 25vh;
+        font-size: 4vh;
+        width: 40vw;
+        height: 25vh;
+    }
+    #final-submit-button-div{
+        padding-bottom: 1vh;
+        padding-top: 1vh;
+    }
+    #final-submit-button{
+        border: none;
+        border-radius: 25vh;
+        font-size: 4vh;
+        font-weight: bold;
+        height: 5vh;
+        width: 14vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 17vw;
+        background-color: rgb(60, 255, 0);
+        margin-bottom: 100px;
+        }
+</style>
+<!--CSS Start-->
+<!--HTML start-->
+<body>
+    <main>
+        <!--Survey Form Starts-->
+        <!--Heading One starts-->
+        <section id="h-1">
+            <div id="title">
+                <h1 class="title-1">
+                Contact Form
+                </h1>
+                <p 
+                id="description"
+                class="title-1"
+                >Please Fill This Enquiry Form.
+                </p>
+            
+            </div>
+        <!--Heading One Ends--> 
+        <!--Section Starts-->   
+        </section>
+        <section id="s-1">
+            <form id="survey-form">
+                <div id="note">
+                    <h4>*Note Please Fill Correct Details.</h4>
+                </div>
+                <div class="content" id="name">
+                    <label id="name-label">
+                        Name:
+                        <br>
+                        <input 
+                        type="text" 
+                        name="Name" 
+                        placeholder="Full Name"
+                        class="label-input" 
+                        minlength="1"
+                        maxlength="30"
+                        required>
+                    </label>
+                </div>
+                <br>
+                <div class="content" id="email">
+                    <label id="email-label">
+                        E-mail:
+                        <br>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        placeholder="abc@xyz.com"  
+                        size="30"
+                        class="label-input" 
+                        required>
+                    </label>
+                </div>
+                <br>
+                <div class="content" id="number">
+                    <label id="number-label">
+                        Age:
+                        <br>
+                        <input 
+                        type="number" 
+                        placeholder="Age" 
+                        min="18" 
+                        max="65"
+                        class="label-input"
+                        required
+                        />
+                    </label>
+                </div>
+                <br>
+                <div class="content" id="mo-number">
+                    <label>
+                        Tel. Number:
+                        <br>
+                        <input 
+                        type="tel" 
+                        name="tel" 
+                        placeholder="+91-12345-67890" 
+                        minlength="10"
+                        maxlength="10"
+                        class="label-input" 
+                        required>
+                    </label>
+                </div>
+                <br>
+                <div class="content">
+                    <label id="what-is-your-qualificarion">What Is Your Qualification:</label>
+                </div>    
+                <div class="content">
+                    <select id="dropdown" name="select-qualification" class="label-input">
+                        <option disabled selected value class="option">Select Qualification</option>
+                        <option value="B.Tech" class="option">B.Tech</option>
+                        <option value="B.E." class="option">B.E.</option>
+                        <option value="Diploma" class="option">Diploma</option>
+                        <option value="12th" class="option">12th</option>
+                    </select>
+                </div>
+                <br>
+                <div class="content" id="select-your-goal">
+                    <label id="select-your-goal-p">Select Your Goal Select:
+                        <br>
+                    </label>
+                    <br>
+                    <label> 
+                        <input 
+                            type="radio" 
+                            name="radio-button" 
+                            value="Higher Education"
+                            class="radio-button"
+                        >Higher Education
+                    </label>
+                    <br>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="radio-button"
+                            value="Higher Education"
+                            class="radio-button"
+                        >M.Tech.
+                    </label>
+                    <br>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="radio-button"
+                            value="Higher Education"
+                            class="radio-button"
+                        >M.S.
+                    </label>
+                    <br>
+                    <label>
+                        <input 
+                            type="radio" 
+                            name="radio-button"
+                            value="Higher Education"
+                            class="radio-button"
+                        >Job
+                    </label>
+                </div>
+                <br>
+                <div class="form-group content" id="form-group-skills">
+                    <p>Skills??
+                       <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <br>
+                        <label
+                          ><input
+                            name="prefer"
+                            value="front-end-Developement"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Front-end Developement</label
+                        ><br>
+                        <label>
+                          <input
+                            name="prefer"
+                            value="back-end-Developement"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Back-end Developement</label
+                        ><br>
+                        <label
+                          ><input
+                            name="prefer"
+                            value="Full-stack-Developement"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Full stack Developement</label
+                        ><br>
+                        <label
+                          ><input
+                            name="prefer"
+                            value="Android-Developement"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Android-Developement</label
+                        ><br>
+                        <label
+                          ><input
+                            name="prefer"
+                            value="open-source-community"
+                            type="checkbox"
+                            class="input-checkbox"
+                          />Open Source Community</label
+                        >
+                </div>
+                <br>
+                <div class="content">
+                    <textarea type="text" placeholder="Write About Yourself in 1000 Alphabets."></textarea>
+                </div>
+                <div id="final-submit-button-div" >
+                    <input type="submit" id="final-submit-button">
+                </div>
+            </form>
+        </section>
+        <!--Section Ends-->
+        <!--Survey Form Ends-->
+    </main>   
+</body>
+</html>
+<!--HTML End-->
